@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    {{#each css}}
+    <link rel="stylesheet" href="/css/{{this}}">
+    {{/each}}
+
+</head>
+
+<body>
+    <h1>Answer all the trivia questions right to get the flag</h1>
+    <br />
+
+<div class="questions">
+    <form action="submit" method="post">
+
+        <ol>
+            <li>
+                        <div class="q-container">
+            <p>What language was the OPC UA client module of the recent ICS malware PIPEDREAM (INCONTROLLER) written in?
+            </p>
+            <input type="radio" id="Ruby" name="pipedream" value="Ruby">
+            <label for="Ruby">Ruby</label><br>
+
+            <input type="radio" id="Go" name="pipedream" value="Go">
+            <label for="Go">Go</label><br>
+
+            <input type="radio" id="Python" name="pipedream" value="Python">
+            <label for="Python">Python</label><br>
+
+            <input type="radio" id="C++" name="pipedream" value="C++">
+            <label for="C++">C++</label><br><br>
+        </div>
+            </li><br>
+            <li>        <div class="q-container">
+            <p>What is the most common successful methods of major (> $1 million in damage) cyber attacks on agricultural businesses used in the last 4 years?
+            </p>
+            <input type="radio" id="Phishing" name="ttp" value="Phishing">
+            <label for="Phishing">Phishing</label><br>
+
+            <input type="radio" id="DDos" name="ttp" value="DDos">
+            <label for="DDos">DDos</label><br>
+
+            <input type="radio" id="Trojans" name="ttp" value="Trojans">
+            <label for="Trojans">Trojans</label><br>
+
+            <input type="radio" id="Ransomware" name="ttp" value="Ransomware">
+            <label for="Ransomware">Ransomware</label><br><br>
+        </div></li><br>
+            <li>        <div class="q-container">
+            <p>What cyber insurance company has had the largest ransomware payout?
+            </p>
+            <input type="radio" id="Prudential-Insurance" name="insurance" value="Prudential Insurance">
+            <label for="Prudential-Insurance">Prudential Insurance</label><br>
+
+            <input type="radio" id="CNA-Insurance" name="insurance" value="CNA-Insurance">
+            <label for="CNA-Insurance">CNA Insurance</label><br>
+
+            <input type="radio" id="AIG" name="insurance" value="AIG">
+            <label for="AIG">AIG</label><br>
+
+            <input type="radio" id="American-National-Insurance" name="insurance" value="American National Insurance">
+            <label for="American-National-Insurance">American National Insurance</label><br><br>
+        </div></li><br>
+            <li>        <div class="q-container">
+            <p>What malware was used to erased selected files on disk or corrupt the MBR during the attack on Ukrainian
+                Oblenergos in 2015?</p>
+            <input type="radio" id="KillDisk" name="ukrain" value="KillDisk">
+            <label for="KillDisk">KillDisk</label><br>
+
+            <input type="radio" id="AsyncRAT" name="ukrain" value="AsyncRAT">
+            <label for="AsyncRAT">AsyncRAT</label><br>
+
+            <input type="radio" id="SDelete" name="ukrain" value="SDelete">
+            <label for="SDelete">SDelete</label><br>
+
+            <input type="radio" id="Shamoon" name="ukrain" value="Shamoon">
+            <label for="Shamoon">Shamoon</label>
+        </div></li><br>
+            <li>        <div class="q-container">
+            <p>Which of the following windows API calls is most often associated with process injection?</p>
+            <input type="radio" id="PathCchAppendEx" name="injection" value="PathCchAppendEx">
+            <label for="PathCchAppendEx">PathCchAppendEx</label><br>
+
+            <input type="radio" id="VirtualAllocEx" name="injection" value="VirtualAllocEx">
+            <label for="VirtualAllocEx">VirtualAllocEx</label><br>
+
+            <input type="radio" id="PeekNamedPipe" name="injection" value="PeekNamedPipe">
+            <label for="PeekNamedPipe">PeekNamedPipe</label><br>
+
+            <input type="radio" id="AtlThunk_FreeData" name="injection" value="AtlThunk_FreeData">
+            <label for="AtlThunk_FreeData">AtlThunk_FreeData</label><br><br>
+        </div></li><br>
+            <li>        <div class="q-container">
+            <p>Which dll is actually responsible for PowerShell?</p>
+            <input type="radio" id="NTDLL.DLL" name="powershell" value="NTDLL.DLL">
+            <label for="NTDLL.DLL">NTDLL.DLL</label><br>
+
+            <input type="radio" id="mscomctl.dll" name="powershell" value="mscomctl.dll">
+            <label for="mscomctl.dll">mscomctl.dll</label><br>
+
+            <input type="radio" id="System.EnterpriseServices.dll" name="powershell"
+                value="System.EnterpriseServices.dll">
+            <label for="System.EnterpriseServices.dll">System.EnterpriseServices.dll</label><br>
+
+            <input type="radio" id="System.Management.Automation.dll" name="powershell"
+                value="System.Management.Automation.dll">
+            <label for="System.Management.Automation.dll">System.Management.Automation.dll</label><br><br>
+        </div></li><br>
+            <li>        <div class="q-container">
+            <p>What was the minimum number of records were breached in the largest 3 data breaches in history?
+            </p>
+            <input type="radio" id="100m" name="records" value="100m">
+            <label for="100m">Over 100 million</label><br>
+
+            <input type="radio" id="500m" name="records" value="500me">
+            <label for="500m">Over 500 million</label><br>
+
+            <input type="radio" id="1b" name="records" value="1b">
+            <label for="1b">Over 1 billion</label><br>
+
+            <input type="radio" id="10b" name="records" value="10b">
+            <label for="10b">Over 10 billion</label><br><br>
+        </div></li><br>
+            <li>        <div class="q-container">
+            <p>In the 2021 cyberattack on JBS, how much ransom was paid in Bitcoin to the cyber criminal group?
+            </p>
+            <input type="radio" id="11m" name="btc" value="11m">
+            <label for="11m">11 million</label><br>
+
+            <input type="radio" id="6m" name="btc" value="6m">
+            <label for="6m">6 million</label><br>
+
+            <input type="radio" id="9m" name="btc" value="9m">
+            <label for="9m">9 million</label><br>
+
+            <input type="radio" id="15m" name="btc" value="15m">
+            <label for="15m">15 million</label><br><br>
+        </div></li><br>
+        </ol>
+
+        <div style="padding: 30px">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</div>
+
+    <div>
+        <h3 id="response"></h3>
+    </div>
+
+</body>
+<script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        fetch(form.action, {
+            method: "post",
+            body: new URLSearchParams(new FormData(form)) 
+        }).then(response => response.json())
+            .then(body => {
+                console.log("response body.message:", body.message)
+                if (body.status == "correct") {
+                    console.log("correct: ", body.status)
+                    document.getElementById("response").style.color = "green"
+                } else {
+                    document.getElementById("response").style.color = "red"
+                }
+                document.getElementById("response").innerText = body.message
+            })
+    });
+</script>
+
+</html>
