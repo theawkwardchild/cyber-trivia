@@ -67,7 +67,7 @@
             <label for="American-National-Insurance">American National Insurance</label><br><br>
         </div></li><br>
             <li>        <div class="q-container">
-            <p>What malware was used to erased selected files on disk or corrupt the MBR during the attack on Ukrainian
+            <p>What malware was used to erase selected files on disk or corrupt the MBR during the attack on Ukrainian
                 Oblenergos in 2015?</p>
             <input type="radio" id="KillDisk" name="ukrain" value="KillDisk">
             <label for="KillDisk">KillDisk</label><br>
@@ -112,7 +112,7 @@
             <label for="System.Management.Automation.dll">System.Management.Automation.dll</label><br><br>
         </div></li><br>
             <li>        <div class="q-container">
-            <p>What was the minimum number of records were breached in the largest 3 data breaches in history?
+            <p>What was the minimum number of records breached in the largest 3 data breaches in history?
             </p>
             <input type="radio" id="100m" name="records" value="100m">
             <label for="100m">Over 100 million</label><br>
@@ -159,6 +159,10 @@
     let form = document.querySelector("form");
     form.addEventListener("submit", function (event) {
         event.preventDefault();
+        if(document.querySelectorAll('input[type="radio"]:checked').length != 8){
+            alert("Fill out all questions before submitting")
+            return
+        }
 
         fetch(form.action, {
             method: "post",
