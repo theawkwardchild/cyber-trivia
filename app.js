@@ -45,7 +45,7 @@ app.post('/submit', function(req, res, next) {
 
 /* GET home page. */
 app.get('/', function(req, res, next) {
-  res.render('index', { title: 'Trackslist' });
+  res.render('index', { title: 'Cyber Trivia' });
 });
 
 app.use( ( req, res, next ) => {
